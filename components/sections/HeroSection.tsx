@@ -29,7 +29,7 @@ export default function Hero() {
          </RevealAnimation>
          <RevealAnimation direction="left" delay={0.3}>
            <p className="mt-6 max-w-prose text-lg text-muted-foreground">
-            I’m a freelance product designer based in London. I’m very passionate about the work that I do.
+           I'm a Software Engineer based in India. I build and scale MVP's for early stage startups and SMB's.
           </p>
          </RevealAnimation>
          <RevealAnimation direction="up" delay={0.5}> 
