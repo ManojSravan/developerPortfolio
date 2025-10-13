@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react" // optional icon for style
+import RevealAnimation from "../animations/RevealAnimation"
 
 const testimonials = [
   {
@@ -20,7 +21,8 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="scroll-mt-16 bg-[var(--brand-surface)] py-16 md:py-20">
       {/* Header */}
-      <div className="text-center py-8">
+      <RevealAnimation direction="left" delay={0.2}>
+        <div className="text-center py-8">
         <span className="inline-flex items-center rounded-full border bg-background px-3 py-1 text-xs font-semibold text-muted-foreground">
           ✺ TESTIMONIALS
         </span>
@@ -31,9 +33,11 @@ export default function Testimonials() {
           {/* Honest feedback from the people I’ve worked with. It’s always rewarding to see projects succeed. */}
         </p>
       </div>
+      </RevealAnimation>
 
       {/* Testimonials Grid */}
-      <div className="mx-auto max-w-7xl px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+      <RevealAnimation direction="up" type="scale" delay={0.4}>
+        <div className="mx-auto max-w-7xl px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
         {testimonials.map((t, index) => (
           <Card
             key={index}
@@ -52,6 +56,7 @@ export default function Testimonials() {
           </Card>
         ))}
       </div>
+      </RevealAnimation>
     </section>
   )
 }

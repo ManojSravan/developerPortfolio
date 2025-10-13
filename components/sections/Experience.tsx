@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import RevealAnimation from "../animations/RevealAnimation"
 
 export default function ExperienceTimeline() {
   const [showAll, setShowAll] = useState(false)
@@ -51,7 +52,8 @@ export default function ExperienceTimeline() {
     <section id="experience" className="scroll-mt-16 bg-[var(--brand-surface)] py-20 md:py-24">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 md:grid-cols-2">
         {/* Left Side */}
-        <div>
+       <RevealAnimation direction="left" delay={0.2}>
+         <div>
           <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">My Experience</h2>
           <p className="mt-4 max-w-prose text-muted-foreground">
             I’ve had the pleasure of working with companies across various industries. Always eager to take on new and
@@ -64,9 +66,11 @@ export default function ExperienceTimeline() {
             More About Me
           </Link>
         </div>
+       </RevealAnimation>
 
         {/* Timeline */}
-        <ol className="relative grid gap-10">
+    <RevealAnimation direction="right" delay={0.4}>
+          <ol className="relative grid gap-10">
           <div className="absolute left-2 top-0 bottom-0 w-px bg-border md:left-3" aria-hidden />
           {visibleItems.map((it, idx) => (
             <li key={idx} className="relative pl-8">
@@ -90,6 +94,7 @@ export default function ExperienceTimeline() {
             </button>
           </div>
         </ol>
+    </RevealAnimation>
       </div>
     </section>
   )

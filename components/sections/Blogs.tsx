@@ -2,32 +2,32 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function BlogSection() {
-  const blogs = [
-    {
-      title: 'Announcing a free plan for small teams',
-      description: 'At Wake, our mission has always been focused on bringing openness.',
-      image: 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
-      author: 'Lauren Waller',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      link: '#',
-    },
-    {
-      title: 'How Google Assistant now helps you record stories for kids',
-      description: 'Google is constantly updating its consumer AI, Google Assistant, with new features.',
-      image: 'https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
-      author: 'Aaron Larsson',
-      avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      link: '#',
-    },
-    {
-      title: "Front accounts - let's work together",
-      description: 'Are you an accountant? Are you a company formation advisor?',
-      image: 'https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
-      author: 'Lauren Waller',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      link: '#',
-    },
-  ]
+  // const blogs = [
+  //   {
+  //     title: 'Announcing a free plan for small teams',
+  //     description: 'At Wake, our mission has always been focused on bringing openness.',
+  //     image: 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
+  //     author: 'Lauren Waller',
+  //     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+  //     link: '#',
+  //   },
+  //   {
+  //     title: 'How Google Assistant now helps you record stories for kids',
+  //     description: 'Google is constantly updating its consumer AI, Google Assistant, with new features.',
+  //     image: 'https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
+  //     author: 'Aaron Larsson',
+  //     avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+  //     link: '#',
+  //   },
+  //   {
+  //     title: "Front accounts - let's work together",
+  //     description: 'Are you an accountant? Are you a company formation advisor?',
+  //     image: 'https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&auto=format&fit=crop&w=560&q=80',
+  //     author: 'Lauren Waller',
+  //     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
+  //     link: '#',
+  //   },
+  // ]
 
   return (
    <>
@@ -41,7 +41,7 @@ export default function BlogSection() {
       </div>
 
       {/* Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (
           <Link
             key={index}
@@ -65,7 +65,7 @@ export default function BlogSection() {
             </div>
           </Link>
         ))}
-      </div>
+      </div> */}
 
       {/* Read More Button */}
       <div className="mt-12 text-center">

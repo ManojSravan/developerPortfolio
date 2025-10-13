@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Analytics } from '@vercel/analytics/next';
+  import { ToastContainer } from 'react-toastify';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -76,10 +78,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="4cb71f01-e6b6-46b9-8bd4-f9cf33392265"></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar/>
+        <ToastContainer/>
         {children}
         <Analytics/>
         <Footer/> 

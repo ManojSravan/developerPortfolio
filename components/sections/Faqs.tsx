@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import RevealAnimation from "../animations/RevealAnimation"
 
 const faqs = [
   {
@@ -41,15 +42,18 @@ export default function FAQ() {
   return (
     <section id="faq" className="scroll-mt-16 py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="text-center">
-          <span className="inline-flex items-center rounded-full border bg-background px-3 py-2 text-xs font-semibold">
+       <RevealAnimation direction="left" delay={0.2}>
+         <div className="text-center">
+          <span className="inline-flex items-center rounded-full text-muted-foreground border bg-background px-3 py-2 text-xs font-semibold">
             ✺ PROCESS
           </span>
           <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">Have questions?</h2>
          
         </div>
+       </RevealAnimation>
 
-        <Accordion type="single" collapsible className="mt-10">
+        <RevealAnimation direction="up" type="scale" delay={0.4}>
+          <Accordion type="single" collapsible className="mt-10">
           {faqs.map((f, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
               <AccordionTrigger className="text-left text-base">{f.q}</AccordionTrigger>
@@ -57,6 +61,7 @@ export default function FAQ() {
             </AccordionItem>
           ))}
         </Accordion>
+        </RevealAnimation>
       </div>
     </section>
   )
