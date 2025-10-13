@@ -15,7 +15,7 @@ export default function Hero() {
           </RevealAnimation>
          <RevealAnimation direction="left" delay={0.2}>
            <h1 className="mt-6 text-pretty text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-5xl">
-            {"I'm Manoj Sravan,"}
+            {"I&apos;m Manoj Sravan,"}
             <br />
             <span className="relative inline-block py-2">
               a Software Engineer
@@ -29,7 +29,7 @@ export default function Hero() {
          </RevealAnimation>
          <RevealAnimation direction="left" delay={0.3}>
            <p className="mt-6 max-w-prose text-lg text-muted-foreground">
-           I'm a Software Engineer based in India. I build and scale MVP's for early stage startups and SMB's.
+           I&apos;m a Software Engineer based in India. I build and scale MVP&apos;s for early stage startups and SMB&apos;s.
           </p>
          </RevealAnimation>
          <RevealAnimation direction="up" delay={0.5}> 
