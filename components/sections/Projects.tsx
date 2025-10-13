@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: "Creating a Scalable and Interactive LMS System",
     desc: "Our team built a scalable Learning Management System (LMS) from the ground up, designed to support students, trainers, and admins with interactive learning, efficient content management, and a robust backend built for performance and growth.",
-    href: "#",
+    href: "https://medium.com/@workwithmanojsravan/case-study-building-a-scalable-learning-management-system-lms-from-scratch-6e60ca8222a9",
     img: {
       src: "https://images.unsplash.com/photo-1616593772450-6220bc809944?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1191",
       alt: "Creating a Scalable and Interactive LMS System",
