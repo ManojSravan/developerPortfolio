@@ -88,7 +88,7 @@ export default function ExperienceTimeline() {
           <div className="pl-8">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="mt-2 text-sm font-semibold text-accent hover:underline"
+              className="mt-2 text-sm font-semibold   hover:underline"
             >
               {showAll ? "Show Less" : "Read More"}
             </button>

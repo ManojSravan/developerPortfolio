@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import RevealAnimation from "../animations/RevealAnimation"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -34,7 +35,7 @@ export default function Hero() {
          </RevealAnimation>
          <RevealAnimation direction="up" delay={0.5}> 
            <div className="mt-8">
-            <Button className="rounded-[1.25rem] px-6 py-5 text-base font-semibold">See My Works</Button>
+            <Button className="rounded-[1.25rem] px-6 py-5 text-base font-semibold"><Link href={'#projects'}>See My Works</Link></Button>
           </div>
          </RevealAnimation>
         </div>
