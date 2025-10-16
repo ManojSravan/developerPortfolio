@@ -15,7 +15,7 @@ export default function Hero() {
           </RevealAnimation>
          <RevealAnimation direction="left" delay={0.2}>
            <h1 className="mt-6 text-pretty text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-5xl">
-            {"I&apos;m Manoj Sravan,"}
+             I&apos;m Manoj Sravan
             <br />
             <span className="relative inline-block py-2">
               a Software Engineer
