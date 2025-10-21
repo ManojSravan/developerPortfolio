@@ -1,23 +1,20 @@
-import Contact from "@/components/sections/Contact";
-import ExperienceTimeline from "@/components/sections/Experience";
-import FAQ from "@/components/sections/Faqs";
-import Features from "@/components/sections/Features";
-import HeroSection from "@/components/sections/HeroSection";
-import Projects from "@/components/sections/Projects";
-import Services from "@/components/sections/Services";
-import Testimonials from "@/components/sections/Testimonials";
+'use client'
+import Projects from "@/components/sections/home/Projects";
+import Services from "@/components/sections/home/Services";
+import Testimonials from "@/components/sections/home/Testimonials";
+import Hero from "@/components/sections/home/HeroSection";
 export default function Home() {
+
    return (
       <>
-
-         <HeroSection />
-         <ExperienceTimeline/>
-         <Features />
-         <Services />
-         <Projects/>
-         <Testimonials />
-         <FAQ />
-         <Contact />
+         <div className="relative h-full w-full overflow-hidden">
+             <Hero/>
+           
+             <Services/>
+             <Projects/>
+             <Testimonials/>
+        
+         </div>
       </>
    );
 }

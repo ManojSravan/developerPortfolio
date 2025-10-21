@@ -1,30 +1,31 @@
+import RevealAnimation from "@/components/animations/RevealAnimation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FlaskConical, Lightbulb, Rocket } from "lucide-react"
-import RevealAnimation from "../animations/RevealAnimation"
-
+ 
 const steps = [
   {
     no: "01.",
-    title: "Research & Ideation",
-    desc: "Understanding your brand, audience, and goals to spark ideas that shape the foundation.",
+    title: "Research & Planning",
+    desc: "Understand your goals and audience.",
     icon: Lightbulb,
     tint: "bg-[var(--accent-1)]/40",
   },
   {
     no: "02.",
-    title: "Concept Development",
-    desc: "Transforming insights into clear concepts with rationale and direction.",
+    title: "Design & Concept",
+    desc: "Create clear visuals and layouts.",
     icon: FlaskConical,
     tint: "bg-[var(--accent-2)]/30",
   },
   {
     no: "03.",
-    title: "Prototyping & Testing",
-    desc: "Iterating quickly with feedback to validate solutions and polish details.",
+    title: "Build & Launch",
+    desc: "Develop, test, and deliver smoothly.",
     icon: Rocket,
     tint: "bg-[var(--accent-1)]/35",
   },
-]
+];
+
 
 export default function Features() {
   return (
@@ -32,7 +33,7 @@ export default function Features() {
       <div className="mx-auto max-w-7xl px-4">
         <RevealAnimation direction="left" delay={0.2}>
           <div className="text-center">
-            <span className="inline-flex items-center text-muted-foreground rounded-full border bg-background px-3 py-1 text-xs font-semibold">
+            <span className="inline-flex items-center text-primary rounded-full border bg-background px-3 py-1 text-xs font-semibold">
               ✺ PROCESS
             </span>
             <h2 className="text-pretty mt-5 text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -51,8 +52,7 @@ export default function Features() {
                     </div>
                     <CardTitle className="text-xl md:text-2xl">{s.title}</CardTitle>
                   </div>
-                  <span className="text-lg font-semibold text-foreground/70">{s.no}</span>
-                </CardHeader>
+                 </CardHeader>
                 <CardContent className="pt-0 text-muted-foreground">{s.desc}</CardContent>
               </Card>
             </RevealAnimation>

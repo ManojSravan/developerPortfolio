@@ -1,6 +1,6 @@
+import RevealAnimation from "@/components/animations/RevealAnimation"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import RevealAnimation from "../animations/RevealAnimation"
-
+ 
 const faqs = [
   {
     q: "What kind of projects do you usually take on?",
@@ -41,7 +41,7 @@ const faqs = [
 export default function FAQ() {
   return (
     <section id="faq" className="scroll-mt-16 py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto container px-4">
        <RevealAnimation direction="left" delay={0.2}>
          <div className="text-center">
           <span className="inline-flex items-center rounded-full text-muted-foreground border bg-background px-3 py-2 text-xs font-semibold">

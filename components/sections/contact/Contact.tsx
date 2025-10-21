@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import RevealAnimation from "../animations/RevealAnimation";
+import RevealAnimation from "../../animations/RevealAnimation";
   import {  toast } from 'react-toastify';
 
 export default function Contact() {
@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="scroll-mt-16 bg-[var(--brand-surface)] py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto container px-4">
         <div className="rounded-none border-2 bg-background p-6 md:p-10 lg:p-14">
           <RevealAnimation direction="left" delay={0.2}>
             <div className="text-center">

@@ -1,7 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import RevealAnimation from "../animations/RevealAnimation"
+ 
 import Link from "next/link"
+import RevealAnimation from "@/components/animations/RevealAnimation"
 
 export default function Hero() {
   return (

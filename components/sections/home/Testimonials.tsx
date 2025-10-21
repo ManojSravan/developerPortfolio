@@ -1,6 +1,7 @@
+import RevealAnimation from "@/components/animations/RevealAnimation"
 import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react" // optional icon for style
-import RevealAnimation from "../animations/RevealAnimation"
+ 
 
 const testimonials = [
   {
@@ -23,7 +24,7 @@ export default function Testimonials() {
       {/* Header */}
       <RevealAnimation direction="left" delay={0.2}>
         <div className="text-center py-8">
-        <span className="inline-flex items-center rounded-full border bg-background px-3 py-1 text-xs font-semibold text-muted-foreground">
+        <span className="inline-flex items-center rounded-full border bg-background px-3 py-1 text-xs font-semibold text-primary">
           ✺ TESTIMONIALS
         </span>
         <h2 className="text-pretty mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -41,11 +42,11 @@ export default function Testimonials() {
         {testimonials.map((t, index) => (
           <Card
             key={index}
-            className="border-2 border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 rounded-xl"
+            className="border-2 border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 rounded-none"
           >
-            <CardContent className="px-6 py-6 text-center md:px-8">
+            <CardContent className="px-1 py-6 text-center md:px-8">
               <Quote className="mx-auto mb-4 h-6 w-6 text-accent" />
-              <blockquote className="text-base md:text-lg leading-relaxed text-foreground/90 italic">
+              <blockquote className="text-sm md:text-sm leading-relaxed text-foreground/90 italic">
                 “{t.quote}”
               </blockquote>
               <div className="mt-6">

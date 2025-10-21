@@ -1,7 +1,7 @@
+import RevealAnimation from "@/components/animations/RevealAnimation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BadgeCheck, Search, Palette, Globe } from "lucide-react"
-import RevealAnimation from "../animations/RevealAnimation"
-
+ 
 const items = [
   {
     title: "Strategy & Planning",
@@ -35,7 +35,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-4">
         <RevealAnimation direction="left" delay={0.2}>
           <div className="text-center">
-            <span className="inline-flex items-center text-muted-foreground rounded-full border bg-background px-3 py-1 text-xs font-semibold">
+            <span className="inline-flex items-center text-primary rounded-full border bg-background px-3 py-1 text-xs font-semibold">
               ✺ MY SERVICES
             </span>
             <h2 className="text-pretty mt-5 text-3xl font-extrabold tracking-tight md:text-4xl">
