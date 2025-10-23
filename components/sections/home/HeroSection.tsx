@@ -6,8 +6,8 @@ import RevealAnimation from "@/components/animations/RevealAnimation"
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-[var(--brand-surface)]">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24 lg:py-28">
+    <section id="home" className="relative bg-[var(--brand-surface)]">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-12 py-16 md:grid-cols-2 md:py-24 lg:py-28">
        <RevealAnimation >
          <div className="max-w-xl">
           <RevealAnimation direction="left">
@@ -44,18 +44,23 @@ export default function Hero() {
 
         <RevealAnimation type="scale" delay={0.3}>
           <div className="relative mx-auto pt-2 w-full max-w-md">
-          <div className="rounded-none border   shadow-sm">
-            <Image
-              src={
-                "https://images.unsplash.com/photo-1587902673915-631e5ba4488f?q=80&w=1192&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              alt="Portrait of designer"
-              width={420}
-              height={560}
-              className="h-auto w-full rounded-none object-cover"
-              priority
-            />
-          </div>
+          <RevealAnimation type="scale" delay={0.3}>
+  <div
+    className="
+      relative mx-auto w-full max-w-md overflow-hidden rounded-none border shadow-sm
+      aspect-[3/4] sm:aspect-[4/5] md:aspect-[5/6] lg:aspect-[6/7]
+    "
+  >
+    <Image
+      src="https://images.unsplash.com/photo-1587902673915-631e5ba4488f?q=80&w=1192&auto=format&fit=crop&ixlib=rb-4.1.0"
+      alt="Portrait of designer"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
+</RevealAnimation>
+
         </div>
         </RevealAnimation>
       </div>

@@ -1,6 +1,6 @@
 const WhyMe = () => {
   return (
-    <section className="flex justify-center items-center px-6 py-20">
+    <section className="flex justify-center items-center px-8 py-20">
       <div className="mx-auto container w-full text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-12">
           Why work with me?

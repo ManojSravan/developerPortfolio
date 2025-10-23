@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-16 py-20 md:py-24">
-      <div className="mx-auto  max-w-7xl px-4">
+      <div className="mx-auto  max-w-7xl px-8">
         <RevealAnimation direction="left" delay={0.2}>
           <div className="text-center">
             <span className="inline-flex items-center text-primary rounded-full border bg-background px-3 py-1 text-xs font-semibold">

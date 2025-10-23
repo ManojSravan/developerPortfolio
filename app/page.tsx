@@ -7,7 +7,7 @@ export default function Home() {
 
    return (
       <>
-         <div className="relative h-full w-full overflow-hidden">
+         <div className="max-w-7xl mx-auto  overflow-hidden">
              <Hero/>
            
              <Services/>

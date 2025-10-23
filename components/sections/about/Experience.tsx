@@ -50,7 +50,7 @@ export default function ExperienceTimeline() {
 
   return (
     <section id="experience" className="scroll-mt-16 bg-[var(--brand-surface)] py-20 md:py-24">
-      <div className="mx-auto grid container grid-cols-1 gap-12 px-4 md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-12 md:grid-cols-2">
         {/* Left Side */}
        <RevealAnimation direction="left" delay={0.2}>
          <div>
